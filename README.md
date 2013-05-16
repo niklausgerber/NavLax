@@ -1,0 +1,23 @@
+# NavLax
+## A fluid and mobile friendly navigation concept by Niklaus Gerber
+«NavLax» is my take on the beautiful navigation concept of the Teehan+Lax (http://www.teehanlax.com) agency website. It has been built to be fluid responsive and to work with ease on any mobile device with or without retina screen. The grid and the Flat-UI components are taken from my [«Rapid Bootstrap»](https://github.com/niklausgerber/Rapid-Bootstrap "Rapid Bootstrap"). Please feel free to send me a link if you implemented it into one of your projects.
+
+**[Please visit the demo page to view «NavLax» in action](https://github.com/niklausgerber/Rapid-Bootstrap "Please visit the demo page to view «NavLax» in action")**
+
+## Disclaimer
+
+### Credits
+Please support humans.txt (http://humanstxt.org/). It's an initiative for knowing the people behind a website. It's a TXT file that contains information about the different people who have contributed to building the website.
+
+	Bootstrap: https://github.com/niklausgerber/NavLax
+	Niklaus Gerber
+	Twitter: @niklausgerber
+	URL: http://niklausgerber.com
+	Location: Bern, Switzerland
+	
+### Licences
+«NavLax» by Niklaus Gerber is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License.
+Based on a work at github.com.
+
+### Download, Fork, Commit.
+If you think you can make this better, please Download, Fork, & Commit. I'd love to see your ideas.
