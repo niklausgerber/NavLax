@@ -56,50 +56,18 @@ $(document).ready(function() {
 		return false;
 	});
 	
-	// Show Comments
-	$('#show-comments').click(function(){
-		if($("#comments").css("display") == "none") {
-			$("#comments").slideToggle(1000);	
-			$('html, body').animate({
-			   		scrollTop: $("#comments").offset().top - 85
-			}, 1000);
-			$('a#show-comments').text('Hide Comments');
-		} else {
-			$("#comments").slideToggle(1000);	
-			$('html, body').animate({
-			   		scrollTop: $("#comments").offset().top
-			}, 1000);
-			$('a#show-comments').text('Show Comments');
-		}
-		return false;
+	// Catching Windows Resize for 3 Bar Icon Color
+	updateContainer();
+	$(window).resize(function() {
+	    updateContainer();
 	});
-	
-	// rollover swap images with rel 
-		var img_src = "";
-		var new_src = "";
-	
-			$(".rollover").hover(function(){
-				//mouseover
-	
-				img_src = $(this).attr('src'); //grab original image
-				new_src = $(this).attr('rel'); //grab rollover image
-				$(this).attr('src', new_src); //swap images
-				$(this).attr('rel', img_src); //swap images
-	
-			},
-			function(){
-				//mouse out
-	
-				$(this).attr('src', img_src); //swap images
-				$(this).attr('rel', new_src); //swap images
-			});
-	
-		//preload images
-			var cache = new Array();
-			//cycle through all rollover elements and add rollover img src to cache array
-			$(".rollover").each(function(){
-				var cacheImage = document.createElement('img');
-				cacheImage.src = $(this).attr('rel');
-				cache.push(cacheImage);
-			}); 
 });
+
+// 3 Bar Icon Color
+function updateContainer() {
+    var $containerWidth = $(window).width();
+    if ($containerWidth <= 1280) {
+        $('header a').animate({color: '#2C3E50'}, 800);
+        $('header span').animate({backgroundColor: '#2C3E50'}, 800);
+    }
+}
